@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Señorito café</title>
+  
+  <!--Icono Favorito-->
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/coffee-beans.png">
+
+  <!-- GOOGLE FONT - POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/b825d24f8a.js" crossorigin="anonymous"></script>
+  
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../assets/css/estilos.css" />
+</head>
+
+<!-- INICIO DEL SITIO -->
+<body>
+
+  <header class="row">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/coffee-beans.png" alt="coffe beans" height="18">
+      <span class="logo">Señorito Café ©</span>
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../interiores/variedades.html">Variedades de café</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../interiores/tipos.html">Tipos de bebidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../interiores/prepararlo.html">Cómo prepararlo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inter-banner">
+      <div class="container">
+        <h1 class="font-bold">
+          <img width="42" src="../assets/img/contacto.png" alt="granos de café">
+          Contacto
+        </h1>
+      </div>
+    </section>
+
+    <section class="breadcrumbs">
+      <ul class="container">
+        <li><a href="../index.html">Inicio</a></li>
+        <li>/ Contacto</li>
+      </ul>
+    </section>
+
+    <section class="bajada">
+      <div class="container">
+        <h2 class="font-bold">Envíanos tus dudas o comentarios. Completa el formulario de contacto y te responderemos lo antes posible.</h2>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="column-6">
+          <div class="form-content white-box">
+            <h3 class="font-bold">Fomulario de contacto</h3>
+            <form>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required>
+            
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            
+              <label for="company">Empresa / Organización:</label>
+              <input type="text" id="company" name="company">
+            
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" required></textarea>
+            
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+        <div class="column-6 adress">
+          <div>
+            <h3 class="font-bold">Señorito Café ©</h3>
+            <p>Santiago de Chile, Región Metropolitana. Chile</p>
+          </div>
+          <div>
+            <h4>Kevin Pezoa G.</h4>
+            <a class="d-block" href="mailto:contacto@señorito-cafe.cl">contacto@señorito-cafe.cl</a>
+            <a class="d-block" href="tel:600 800 9000">600 800 9000</a>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.474850210246!2d-70.63636559834131!3d-33.43693313972556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf95f570db63%3A0x8f3e520276210f1a!2sPlaza%20Baquedano!5e0!3m2!1ses!2scl!4v1675044041686!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="left-content">
+          <h3 class="font-bold">Señorito Café ©</h3>
+          <p>Sitio ficticio sobre café para entregas al curso coderhose, realizado por Kevin Pezoa G.</p>
+        </div>
+        <div class="right-content">
+          <h3>Sigueme en</h3>
+          <figure class="rrss">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
