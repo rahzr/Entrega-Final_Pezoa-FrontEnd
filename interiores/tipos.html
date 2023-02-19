@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tipos de bebida | Señorito café</title>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de bebidas | Señorito café</title>
+    
+    <!-- Enlaces a los archivos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
-  <!--Icono Favorito-->
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/coffee-beans.png">
-
-  <!-- GOOGLE FONT - POPPINS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/b825d24f8a.js" crossorigin="anonymous"></script>
+    <!--Icono Favorito-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/coffee-beans.png">
   
-  <!-- STYLES -->
-  <link rel="stylesheet" href="../assets/css/estilos.css" />
-</head>
+    <!-- Google Font - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet">
+  
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/b825d24f8a.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="../assets/css/custom.css">
+  </head>
 
 <!-- INICIO DEL SITIO -->
 <body>
 
-  <header class="row">
-    <a href="../index.html" class="logo">
-      <img src="../assets/img/coffee-beans.png" alt="coffe beans" height="18">
-      <span class="logo">Señorito Café ©</span>
-    </a>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../interiores/variedades.html">Variedades de café</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Tipos de bebidas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../interiores/prepararlo.html">Cómo prepararlo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../interiores/contacto.html">Contacto</a>
-        </li>
-      </ul>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="logo">
+          <img src="../assets/img/coffee-beans.png" alt="coffe beans" height="18">
+          <span class="logo">Señorito Café ©</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../interiores/variedades.html">Variedades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tipos de bebidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../interiores/prepararlo.html">Cómo prepararlo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../interiores/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -76,75 +91,93 @@
     <section class="tipos container">
       <div class="row">
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/espresso.jpg" alt="espresso">
-          <div>
-            <h3 class="font-bold">Espresso</h3>
-            <p>De origen italiano, muy aromático, color muy oscuro y sabor fuerte.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/espresso.jpg" alt="espresso">
+            <div>
+              <h3 class="font-bold">Espresso</h3>
+              <p>De origen italiano, muy aromático, color muy oscuro y sabor fuerte.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/cappuccino.jpg"" alt="cappuccino">
-          <div>
-            <h3 class="font-bold">Cappuccino</h3>
-            <p>Mezcla de espresso y leche vaporizada en igual proporción mezclados con cacao, chocolate o canela en polvo.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/cappuccino.jpg"" alt="cappuccino">
+            <div>
+              <h3 class="font-bold">Cappuccino</h3>
+              <p>Mezcla de espresso y leche vaporizada en igual proporción mezclados con cacao, chocolate o canela en polvo.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/americano.jpg" alt="americano">
-          <div>
-            <h3 class="font-bold">Americano</h3>
-            <p>Espresso mezclado con una taza de agua caliente, reduciendo su cantidad de cafeína.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/americano.jpg" alt="americano">
+            <div>
+              <h3 class="font-bold">Americano</h3>
+              <p>Espresso mezclado con una taza de agua caliente, reduciendo su cantidad de cafeína.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/latte.jpg" alt="latte">
-          <div>
-            <h3 class="font-bold">Latte</h3>
-            <p>Espresso corto, 3 partes de leche vaporizada por encima y azúcar.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/latte.jpg" alt="latte">
+            <div>
+              <h3 class="font-bold">Latte</h3>
+              <p>Espresso corto, 3 partes de leche vaporizada por encima y azúcar.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/mocaccino.jpg" alt="mocaccino">
-          <div>
-            <h3 class="font-bold">Mocaccino</h3>
-            <p>Espresso mezclado con sirope o polvo de chocolate. Puede combinarse con crema de leche y añadir cacao, nata o crema batida.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/mocaccino.jpg" alt="mocaccino">
+            <div>
+              <h3 class="font-bold">Mocaccino</h3>
+              <p>Espresso mezclado con sirope o polvo de chocolate. Puede combinarse con crema de leche y añadir cacao, nata o crema batida.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/macchiato.jpg" alt="macchiato">
-          <div>
-            <h3 class="font-bold">Macchiato</h3>
-            <p>Conocido en España como cortado y compuesto por espresso y leche vaporizada.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/macchiato.jpg" alt="macchiato">
+            <div>
+              <h3 class="font-bold">Macchiato</h3>
+              <p>Conocido en España como cortado y compuesto por espresso y leche vaporizada.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/bombon.jpg" alt="bombon">
-          <div>
-            <h3 class="font-bold">Bombón</h3>
-            <p>Café puro o espresso mezclado con leche condensada.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/bombon.jpg" alt="bombon">
+            <div>
+              <h3 class="font-bold">Bombón</h3>
+              <p>Café puro o espresso mezclado con leche condensada.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/irlandes.jpg" alt="irlandes">
-          <div>
-            <h3 class="font-bold">Irlandés</h3>
-            <p>Espresso mezclado con whisky, azúcar moreno y cubierto con crema de leche o nata.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/irlandes.jpg" alt="irlandes">
+            <div>
+              <h3 class="font-bold">Irlandés</h3>
+              <p>Espresso mezclado con whisky, azúcar moreno y cubierto con crema de leche o nata.</p>
+            </div>
           </div>
         </div>
 
-        <div class="white-box">
-          <img src="../assets/img/preparaciones/descafeinado.jpg" alt="descafeinado">
-          <div>
-            <h3 class="font-bold">Descafeinado</h3>
-            <p>Café al que se le ha extraído la cafeína.</p>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="white-box">
+            <img src="../assets/img/preparaciones/descafeinado.jpg" alt="descafeinado">
+            <div>
+              <h3 class="font-bold">Descafeinado</h3>
+              <p>Café al que se le ha extraído la cafeína.</p>
+            </div>
           </div>
         </div>
         
@@ -156,12 +189,12 @@
 
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="left-content">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
           <h3 class="font-bold">Señorito Café ©</h3>
           <p>Sitio ficticio sobre café para entregas al curso coderhose, realizado por Kevin Pezoa G.</p>
         </div>
-        <div class="right-content">
+        <div class="col-md-4">
           <h3>Sigueme en</h3>
           <figure class="rrss">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -174,5 +207,6 @@
     </div>
   </footer>
   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
