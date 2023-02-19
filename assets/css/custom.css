@@ -17,9 +17,6 @@ body {
 img {
   max-width: 100%;
 }
-ul, ol {
-  margin-left: 20px;
-}
 li {
   margin-bottom: 5px;
   font-size: 14px;
@@ -45,9 +42,15 @@ h1, h2, h3, h4 {
   margin-bottom: 10px;
 }
 .bajada h2 {
-  font-size: 20px;
+  font-size: 17px;
   max-width: 800px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+@media (min-width: 480px) {
+  .bajada h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 }
 /* estilos menu */
 header {
@@ -82,10 +85,11 @@ header .nav-link:hover {
 .breadcrumbs {
   padding: 10px 16px;
   background-color: #f2f2f2;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .breadcrumbs ul {
   list-style: none;
+  margin-bottom: 0;
 }
 .breadcrumbs ul li {
   display: inline;
@@ -94,6 +98,11 @@ header .nav-link:hover {
 }
 .breadcrumbs ul li a {
   color: #828282;
+}
+@media (min-width: 480px) {
+  .breadcrumbs {
+    margin-bottom: 70px;
+  }
 }
 /* estilos footer */
 footer {
@@ -111,7 +120,6 @@ footer i {
 footer .left-content {
   max-width: 400px;
 }
-
 
 /* estilos HOME */
 .container-home-only {
@@ -168,8 +176,8 @@ footer .left-content {
 }
 /* estilos VARIEDADES */
 .inter-banner {
-  padding: 100px 0;
-  text-align: left;
+  padding: 50px 0;
+  text-align: center;
   background-image: url('../img/minimal-coffee.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,12 +197,27 @@ footer .left-content {
   z-index: -1;
 }
 .inter-banner h1 {
-  font-size: 38px;
+  font-size: 28px;
   color: #fff;
 }
 .inter-banner img {
+  display: unset;
   filter: invert(1);
-  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 480px) {
+  .inter-banner {
+    padding: 100px 0;
+    text-align: left;
+  }
+  .inter-banner img {
+    display: inline;
+    margin-right: 10px;
+  }
+  .inter-banner h1 {
+    font-size: 38px;
+    color: #fff;
+  }
 }
 .white-box {
   border: 1px solid #f2f2f2;
@@ -209,32 +232,23 @@ footer .left-content {
   display: flex;
   margin-bottom: 20px;
 }
-.white-box .top img {
-  max-height: 280px;
-  display: inline;
-  margin-right: 15px;
-  border-radius: 10px;
-}
+
 /* estilos TIPOS */
-.tipos .row {
-  flex-wrap: wrap;
-}
 .tipos .white-box {
-  width: 17%;
-  padding: 15px;
+  height: 100%;
 }
 .tipos .white-box img {
   max-height: 280px;
   display: inline;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .tipos .white-box p {
   font-size: 14px;
 }
 /* estilos PREPARARLO */
-.video {
-  max-width: 600px;
-  margin: 0 20px;
+.video iframe{
+  width: 100%;
 }
 /* estilos CONTACTO */
 .form-content label {
@@ -253,4 +267,28 @@ footer .left-content {
 }
 .adress div {
   margin-bottom: 15px;
+}
+.adress iframe {
+  width: 100%;
+}
+.white-box .top img {
+  max-height: 100px;
+  display: inline;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+.white-box p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+@media (min-width: 480px) {
+  .white-box p {
+    font-size: 16px;
+  }
+  .white-box .top img {
+    max-height: 280px;
+    display: inline;
+    margin-right: 15px;
+    border-radius: 10px;
+  }
 }
