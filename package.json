@@ -1,0 +1,20 @@
+{
+  "name": "preentrega2-pezoa",
+  "version": "1.0.0",
+  "description": "Segunda pre-entrega de",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch assets/scss/custom.scss:assets/css/custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahzr/PreEntrega2-Pezoa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahzr/PreEntrega2-Pezoa/issues"
+  },
+  "homepage": "https://github.com/rahzr/PreEntrega2-Pezoa#readme"
+}
